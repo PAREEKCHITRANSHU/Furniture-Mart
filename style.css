@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #0f0f0f;
+  /* background-color: #1f2029; */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: none;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #181818;
+  margin: 0;
+}
+
+.info-wrap {
+  position: relative;
+  margin-left: 500px;
+  z-index: 10;
+  display: block;
+  text-align: left;
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 1.2;
+  /* color: #fff; */
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.2;
+  /* color: #fff;s */
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+h4 span {
+  /* text-decoration: line-through; */
+  font-size: 20px;
+  opacity: 0.6;
+  padding-left: 15px;
+}
+h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  /* color: #fff; */
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px;
+  margin: 0 20px;
+  border: none;
+  font-size: large;
+  color: azure;
+  border-radius: 15px;
+  background-color: rgb(114, 150, 228);
+}
+button:hover {
+  box-shadow: 5px 5px 6px rgb(191, 193, 194);
+  transition: 0.9s;
+}
+
+/* section -1  */
+.section {
+  position: relative;
+  max-width: calc(100% - 40px);
+  width: 860px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px 0;
+  border: 5px solid black;
+}
+.section:hover {
+  box-shadow: 10px 10px 5px rgb(191, 193, 194);
+  transition: 0.9s;
+  /* transform: translate(0, -10px); */
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  visibility: hidden;
+}
+
+.color1-btn:checked + label,
+.color1-btn:not(:checked) + label {
+  position: relative;
+  height: 40px;
+  transition: all 200ms linear;
+  border-radius: 4px;
+  width: 40px;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  /* color: #ffeba7; */
+  margin-right: 10px;
+  box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
+  z-index: 10;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid transparent;
+}
+
+.color1-btn:checked + label {
+  border-color: #434343;
+  transform: scale(1.1);
+}
+
+.img-wrap {
+  position: absolute;
+  background-image: url("./images/chair1.png");
+  left: 0;
+  width: 500px;
+  height: 410px;
+  display: inline-block;
+  z-index: 9;
+  transition: all 550ms linear;
+  transition-delay: 100ms;
+  background-position: center top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
+.for-color-1:checked ~ .img-wrap.chair-1,
+.for-color-2:checked ~ .img-wrap.chair-2 {
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0) rotate(-1deg);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0) rotate(2deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-3px, 0, 0) rotate(-3deg);
+  }
+  40%,
+  60% {
+    transform: translate3d(3px, 0, 0) rotate(3deg);
+  }
+}
+.color2-btn:checked + label,
+.color2-btn:not(:checked) + label {
+  position: relative;
+  height: 40px;
+  transition: all 200ms linear;
+  border-radius: 4px;
+  width: 40px;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  /* color: #ffeba7; */
+  margin-right: 10px;
+  box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
+  z-index: 10;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid transparent;
+}
+
+.color2-btn:checked + label {
+  border-color: #434343;
+  transform: scale(1.1);
+}
+.img1-wrap {
+  position: absolute;
+  background-image: url("./images/table-2.png");
+  left: 0;
+  width: 500px;
+  height: 410px;
+  display: inline-block;
+  z-index: 9;
+  transition: all 550ms linear;
+  transition-delay: 100ms;
+  background-position: center top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+.for-color-3:checked:checked ~ .img1-wrap.table1,
+.for-color-4:checked ~ .img1-wrap.table2 {
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+
+
+.color3-btn:checked + label,
+.color3-btn:not(:checked) + label {
+  position: relative;
+  height: 40px;
+  transition: all 200ms linear;
+  border-radius: 4px;
+  width: 40px;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  /* color: #ffeba7; */
+  margin-right: 10px;
+  box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
+  z-index: 10;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid transparent;
+}
+
+.color3-btn:checked + label {
+  border-color: #434343;
+  transform: scale(1.1);
+}
+.img2-wrap {
+  position: absolute;
+  background-image: url("./images/sofa-1.png");
+  left: 0;
+  width: 500px;
+  height: 410px;
+  display: inline-block;
+  z-index: 9;
+  transition: all 550ms linear;
+  transition-delay: 100ms;
+  background-position: center top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+.for-color-5:checked:checked ~ .img2-wrap.sofa1,
+.for-color-6:checked ~ .img2-wrap.sofa2 {
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+
+
+
+
+.color4-btn:checked + label,
+.color4-btn:not(:checked) + label {
+  position: relative;
+  height: 40px;
+  transition: all 200ms linear;
+  border-radius: 4px;
+  width: 40px;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  /* color: #ffeba7; */
+  margin-right: 10px;
+  box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
+  z-index: 10;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid transparent;
+}
+
+.color4-btn:checked + label {
+  border-color: #434343;
+  transform: scale(1.1);
+}
+.img3-wrap {
+  position: absolute;
+  background-image: url("./images/bed-1.png");
+  left: 0;
+  width: 500px;
+  height: 410px;
+  display: inline-block;
+  z-index: 9;
+  transition: all 550ms linear;
+  transition-delay: 100ms;
+  background-position: center top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+.for-color-7:checked:checked ~ .img3-wrap.bed1,
+.for-color-8:checked ~ .img3-wrap.bed2 {
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}

@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- navbar -->
+    <nav class="navbar navbar-expand-lg " style="background-color:rgb(101, 101, 160); gap: 1rem;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="color: beige; margin: 0 0 0; padding: 0 0 0; gap: 0;">
+                <img src="images/sfa.jpg" alt="Logo" width="50" height="35" class="d-inline-block align-text-top">
+                FurnitureMart
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="product.html" role="button" style="color:beige">Product</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contactus.html" style="color:beige">contact us</a>
+
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"
+                        style="background-color: black; color:white">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- chair -->
+    <h2 class="hometitle" style="align-items: center; text-align: center; margin-top: 2rem;">
+      <span class="has-paging__title">Price Drop of the year</span></h2>
+    <div class="section">
+      <div class="info-wrap">
+        <p>Chair</p>
+        <h2>Traditional Chair</h2>
+        <h4>8000rs<span style="text-decoration: line-through">10000rs</span></h4>
+        <h4>
+          Description
+          <span
+            >Comfort meets style in our chairs. With ergonomic designs and durable materials, they offer the perfect blend of support and sophistication for any space.</span
+          >
+        </h4>
+        <h5>Choose Color:</h5>
+      </div>
+      <input
+        class="color1-btn for-color-1"
+        type="radio"
+        id="color-1"
+        name="color-btn"
+        checked
+      />
+      <label
+        class="first-color"
+        for="color-1"
+        style="background-image: url('images/color1.jpg'); margin-left: 500px"
+      ></label>
+
+      <input
+        class="color1-btn for-color-2"
+        type="radio"
+        id="color-2"
+        name="color-btn"
+      />
+      <label
+        class="color-2"
+        for="color-2"
+        style="background-image: url('images/color2.jpg')"
+      ></label>
+
+      <div
+        class="img-wrap chair-1"
+        style="background-image: url('images/chair1.png')"
+      ></div>
+      <div
+        class="img-wrap chair-2"
+        style="background-image: url('images/chair2.png')"
+      ></div>
+
+      <button>Add To Cart</button>
+    </div>
+    <!-- table-->
+  <div class="section">
+    <div class="info-wrap">
+      <p>Table</p>
+      <h2>Study Table</h2>
+      <h4>4000rs<span style="text-decoration: line-through">8000rs</span></h4>
+      <h4>
+        Description
+        <span
+          >Stylish and functional, our tables are designed to enhance any room with their sleek and modern look. Perfect for dining, working, or simply as a statement piece.</span
+        >
+      </h4>
+      <h5>Choose Color:</h5>
+    </div>
+    <input
+      class="color2-btn for-color-3"
+      type="radio"
+      id="color-3"
+      name="color1-btn"
+      checked
+    />
+    <label
+      class="color-3"
+      for="color-3"
+      style="background-image: url('images/color1.jpg'); margin-left: 500px"
+    ></label>
+
+    <input
+      class="color2-btn for-color-4"
+      type="radio"
+      id="color-4"
+      name="color1-btn"
+    />
+    <label
+      class="color-4"
+      for="color-4"
+      style="background-image: url('images/color-3.jpg')"
+    ></label>
+
+    <div
+      class="img1-wrap table1"
+      style="background-image: url('images/table-2.png')"
+    ></div>
+    <div
+      class="img1-wrap table2"
+      style="background-image: url('images/table-1.png')"
+    ></div>
+
+    <button>Add To Cart</button>
+  </div>
+  <!-- sofa -->
+  <div class="section">
+    <div class="info-wrap">
+      <p>Modern sofa</p>
+      <h2>Telford Sofaa</h2>
+      <h4>59999rs<span style="text-decoration: line-through">99999rs</span></h4>
+      <h4>
+        Description
+        <span
+          >Create your sanctuary with our beds. Designed for comfort and durability, they provide a cozy retreat for a restful night's sleep</span
+        >
+      </h4>
+      <h5>Choose Color:</h5>
+    </div>
+    <input
+      class="color3-btn for-color-5"
+      type="radio"
+      id="color-5"
+      name="color3-btn"
+      checked
+    />
+    <label
+      class="color-5"
+      for="color-5"
+      style="background-image: url('images/color1.jpg'); margin-left: 500px"
+    ></label>
+
+    <input
+      class="color3-btn for-color-6"
+      type="radio"
+      id="color-6"
+      name="color3-btn"
+    />
+    <label
+      class="color-6"
+      for="color-6"
+      style="background-image: url('images/color-4.png')"
+    ></label>
+
+    <div
+      class="img2-wrap sofa1"
+      style="background-image: url('images/sofa-1.png')"
+    ></div>
+    <div
+      class="img2-wrap sofa2"
+      style="background-image: url('images/sofa-2.png')"
+    ></div>
+
+    <button>Add To Cart</button>
+  </div>
+  <!-- bed -->
+  <div class="section">
+    <div class="info-wrap">
+      <p>Bed</p>
+      <h2>ComfortableBed</h2>
+      <h4>12000rs<span style="text-decoration: line-through">20000rs</span></h4>
+      <h4>
+        Description
+        <span
+          >Create your sanctuary with our beds. Designed for comfort and durability, they provide a cozy retreat for a restful night's sleep</span
+        >
+      </h4>
+      <h5>Choose Color:</h5>
+    </div>
+    <input
+      class="color4-btn for-color-7"
+      type="radio"
+      id="color-7"
+      name="color4-btn"
+      checked
+    />
+    <label
+      class="color-7"
+      for="color-7"
+      style="background-image: url('images/color1.jpg'); margin-left: 500px"
+    ></label>
+
+    <input
+      class="color3-btn for-color-8"
+      type="radio"
+      id="color-8"
+      name="color4-btn"
+    />
+    <label
+      class="color-8"
+      for="color-8"
+      style="background-image: url('images/color2.jpg')"
+    ></label>
+
+    <div
+      class="img3-wrap bed1"
+      style="background-image: url('images/bed-1.png')"
+    ></div>
+    <div
+      class="img3-wrap bed2"
+      style="background-image: url('images/bed-2.png')"
+    ></div>
+
+    <button>Add To Cart</button>
+  </div>
+   <!-- footer -->
+   <footer id="site-footer">
+    <div class="bg-success bg-opacity-25 py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xl-3 col-sm-12">
+            <h5 class="pb-3"><i class="fa-solid fa-user-group pe-1"></i> About us</h5>
+            <span class="text-secondary">This is a wider card with supporting text below as a natural lead-in to additional content.</span>
+          </div>
+          <div class="col-md-6 col-xl-3 col-sm-12">
+            <h5 class="pb-3"><i class="fa-solid fa-link pe-1"></i> Important links</h5>
+            <ul>
+              <li><a href="#" class="text-decoration-none link-secondary">About us</a></li>
+              <li><a href="#" class="text-decoration-none link-secondary">Privacy policy</a></li>
+              <li><a href="#" class="text-decoration-none link-secondary">Terms of services</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xl-3 col-sm-12">
+            <h5 class="pb-3"><i class="fa-solid fa-location-dot pe-1"></i> Our location</h5>
+            <span class="text-secondary">
+              Milannagar bazar<br>
+              Tamluk, East Medinipore, West Bengal<br>
+              720001, India<br>
+            </span>
+          </div>
+          <div class="col-md-6 col-xl-3 col-sm-12">
+            <h5 class="pb-3"><i class="fa-solid fa-paper-plane pe-1"></i> Stay updated</h5>
+            <form>
+              <input type="text" class="w-100 mb-2 form-control" name="" placeholder="Email ID">
+              <button class="w-100 btn btn-dark">Subscribe now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a class="btn btn-outline-secondary" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a class="btn btn-outline-secondary" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              <li class="list-inline-item"><a class="btn btn-outline-secondary" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a class="btn btn-outline-secondary" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li class="list-inline-item"><a class="btn btn-outline-secondary" href="#"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-sm-12"><span class="text-secondary pt-1 float-md-end float-sm-start">Copyright &copy; 2023</span></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
