@@ -1,9 +1,10 @@
 # Furniture-Mart
 **Furniture-Mart**
 Welcome to Furniture-Mart, your ultimate destination for premium furniture shopping. Our website offers an immersive experience, allowing you to explore our wide range of products with ease.
+Click here:https://pareekchitranshu.github.io/Furniture-Mart/
 
 ## Demo
-Experience the interactive features of Furniture-Mart by visiting our website: [Furniture-Mart Website](#)
+Experience the interactive features of Furniture-Mart by visiting our website:https://pareekchitranshu.github.io/Furniture-Mart/
 
 ## Getting Started
 Explore our website and start browsing through our furniture collection. Click on any product to see its different color and design options. Use the Contact Us page to get in touch with our team for any inquiries or assistance.
